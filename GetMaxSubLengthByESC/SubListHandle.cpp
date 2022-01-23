@@ -19,7 +19,7 @@ public:
 		int max = 1;
 		for (int i = 0; i < m_list.size(); ++i)
 		{
-			int len = getMaxSubLenByESC(i + 1, m_list[i], 1);
+			int len = getMaxSubLenByESC(i + 1, m_list.at(i), 1);
 			if (max < len)
 			{
 				max = len;
@@ -37,10 +37,10 @@ private:
 		int maxLast = max;
 		for (int i = pos; i < m_list.size(); ++i)
 		{
-			if (m_list[i] > last)
+			if (m_list.at(i) > last)
 			{
 				++maxLast;
-				int len = getMaxSubLenByESC(i + 1, m_list[i], maxLast);
+				int len = getMaxSubLenByESC(i + 1, m_list.at(i), maxLast);
 				if (len > max)
 				{
 					max = len;

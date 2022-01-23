@@ -14,6 +14,15 @@ public:
 
 	~SubListHandle() { m_list.clear(); };
 
+	void print()
+	{
+		for (int i = 0; i < m_list.size(); ++i)
+		{
+			cout << m_list.at(i) << " ";
+		}
+		cout << endl;
+	}
+
 	int getMaxSubLenByESC()
 	{
 		int max = 1;
@@ -68,13 +77,11 @@ int main(void)
 			{
 				cin >> vct[vct.size() - m - 1];
 			}
-			cout << "vector<int>:" << endl;
-			for (int i = 0; i < vct.size(); ++i)
-			{
-				cout << vct[i] << " ";
-			}
-			cout << endl;
+
 			SubListHandle lsHd(vct);
+			cout << "vector<int>:" << endl;
+			lsHd.print();
+
 			cout << "数组中最大升序子序列长度是多少？" << endl;
 			cout << lsHd.getMaxSubLenByESC() << endl;
 			cout << "输入数组长度：";

@@ -25,6 +25,7 @@
     <ProjectGuid>{7cf794bc-0786-43bb-995c-a34a5f60d605}</ProjectGuid>
     <RootNamespace>ConsoleWin</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GetMaxSubLengthByESC</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleWin.cpp" />
+    <ClCompile Include="SubListHandle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
